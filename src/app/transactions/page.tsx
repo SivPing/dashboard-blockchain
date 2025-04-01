@@ -26,7 +26,7 @@ export default function TransactionsPage() {
               </div>
             </div>
 
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-wrap itemjs-center gap-2">
               <Select defaultValue="all">
                 <SelectTrigger className="w-[130px]">
                   <SelectValue placeholder="Transaction Type" />

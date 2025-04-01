@@ -17,6 +17,7 @@ import {
 import { PageTransition } from "@/components/page-transactions"
 import { WalletAssets } from "@/components/wallet-aseets"
 import { TransactionHistory } from "@/components/transition-history"
+import NftCollection from "@/components/nft-collection"
 
 
 export default function WalletPage() {
@@ -160,27 +161,9 @@ export default function WalletPage() {
             </TabsContent>
             <TabsContent value="nfts" className="space-y-4">
               <Card>
-                <CardHeader>
-                  <CardTitle>NFT Collection</CardTitle>
-                  <CardDescription>Your non-fungible token collection</CardDescription>
-                </CardHeader>
                 <CardContent>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {Array.from({ length: 8 }).map((_, i) => (
-                      <div key={i} className="rounded-lg overflow-hidden border bg-card">
-                        <div className="aspect-square bg-muted relative">
-                          <img
-                            src={`/placeholder.svg?height=200&width=200&text=NFT ${i + 1}`}
-                            alt={`NFT ${i + 1}`}
-                            className="object-cover w-full h-full"
-                          />
-                        </div>
-                        <div className="p-3">
-                          <h3 className="font-medium text-sm">CryptoArt #{i + 1}</h3>
-                          <p className="text-xs text-muted-foreground">Collection Name</p>
-                        </div>
-                      </div>
-                    ))}
+                  <div className="">
+                    <NftCollection/>
                   </div>
                 </CardContent>
               </Card>
