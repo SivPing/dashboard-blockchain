@@ -29,7 +29,7 @@ const data = [
 ]
 
 export function AnalyticsCharts() {
-  const [chartType, setChartType] = useState("line")
+  const [, setChartType] = useState("line")
 
   return (
     <div className="space-y-4">

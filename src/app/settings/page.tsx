@@ -11,14 +11,12 @@ import {
   CreditCard,
   Globe,
   Key,
-  Layers,
   LayoutDashboard,
   Lock,
   Settings,
   Shield,
   Wallet,
 } from "lucide-react"
-import { WalletConnect } from "@/components/wallet-connect"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ThemeSelector } from "@/components/theme-selector"
 import { PageTransition } from "@/components/page-transactions"
@@ -156,7 +154,7 @@ export default function SettingsPage() {
                         <Globe className="h-5 w-5" />
                         <div>
                           <p className="font-medium">Bakong CBDC</p>
-                          <p className="text-sm text-muted-foreground">Cambodia's central bank digital currency</p>
+                          <p className="text-sm text-muted-foreground">Cambodia&rsquo;s central bank digital currency</p>
                         </div>
                       </div>
                       <Button variant="outline" size="sm">
@@ -255,7 +253,7 @@ export default function SettingsPage() {
                       <div className="border rounded-lg p-4 cursor-pointer hover:border-primary">
                         <div className="h-20 bg-[#032588] rounded-md mb-2"></div>
                         <p className="font-medium text-sm">Angkor Wat</p>
-                        <p className="text-xs text-muted-foreground">Inspired by Cambodia's iconic temple</p>
+                        <p className="text-xs text-muted-foreground">Inspired by Cambodia&rsquo;s iconic temple</p>
                       </div>
                       <div className="border rounded-lg p-4 cursor-pointer hover:border-primary">
                         <div className="h-20 bg-[#e8505b] rounded-md mb-2"></div>
@@ -265,7 +263,7 @@ export default function SettingsPage() {
                       <div className="border rounded-lg p-4 cursor-pointer hover:border-primary">
                         <div className="h-20 bg-[#00a19a] rounded-md mb-2"></div>
                         <p className="font-medium text-sm">Mekong River</p>
-                        <p className="text-xs text-muted-foreground">Inspired by Cambodia's waterways</p>
+                        <p className="text-xs text-muted-foreground">Inspired by Cambodia&rsquo;s waterways</p>
                       </div>
                       <div className="border rounded-lg p-4 cursor-pointer hover:border-primary">
                         <div className="h-20 bg-[#f7b538] rounded-md mb-2"></div>

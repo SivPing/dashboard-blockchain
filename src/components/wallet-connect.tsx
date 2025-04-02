@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog"
 import { Button } from "./ui/button"
 import { Wallet } from "lucide-react"
+import Image from "next/image"
 
 export function WalletConnect() {
   const [isConnected, setIsConnected] = useState(false)
@@ -54,19 +55,43 @@ export function WalletConnect() {
           ) : (
             <div className="grid grid-cols-2 gap-4">
               <Button variant="outline" className="flex flex-col h-24 items-center justify-center gap-2">
-                <img src="/placeholder.svg?height=32&width=32" alt="MetaMask" className="h-8 w-8" />
+                <Image
+                  src="/placeholder.svg?height=32&width=32"
+                  alt="MetaMask"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
                 <span>MetaMask</span>
               </Button>
               <Button variant="outline" className="flex flex-col h-24 items-center justify-center gap-2">
-                <img src="/placeholder.svg?height=32&width=32" alt="WalletConnect" className="h-8 w-8" />
+                <Image
+                  src="/placeholder.svg?height=32&width=32"
+                  alt="WalletConnect"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
                 <span>WalletConnect</span>
               </Button>
               <Button variant="outline" className="flex flex-col h-24 items-center justify-center gap-2">
-                <img src="/placeholder.svg?height=32&width=32" alt="Coinbase" className="h-8 w-8" />
+                <Image
+                  src="/placeholder.svg?height=32&width=32"
+                  alt="Coinbase"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
                 <span>Coinbase</span>
               </Button>
               <Button variant="outline" className="flex flex-col h-24 items-center justify-center gap-2">
-                <img src="/placeholder.svg?height=32&width=32" alt="Trust Wallet" className="h-8 w-8" />
+                <Image
+                  src="/placeholder.svg?height=32&width=32"
+                  alt="Trust Wallet"
+                  width={32}
+                  height={32}
+                  className="h-8 w-8"
+                />
                 <span>Trust Wallet</span>
               </Button>
             </div>
