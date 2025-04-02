@@ -2,9 +2,7 @@ import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { BarChart3, CreditCard, Layers, LayoutDashboard, Settings, Wallet } from "lucide-react"
-import { WalletConnect } from "@/components/wallet-connect"
-import { ThemeToggle } from "@/components/theme-toggle"
+import { BarChart3, CreditCard, LayoutDashboard, Settings, Wallet } from "lucide-react"
 import { AnalyticsCharts } from "@/components/analytics-charts"
 import { NetworkStats } from "@/components/network-stats"
 import { PageTransition } from "@/components/page-transactions"
@@ -225,7 +223,7 @@ export default function AnalyticsPage() {
                       <div className="rounded-lg border p-4">
                         <h3 className="font-medium mb-2">Bakong CBDC Impact</h3>
                         <p className="text-sm text-muted-foreground mb-4">
-                          The National Bank of Cambodia's Bakong system is one of the world's first retail CBDCs,
+                          The National Bank of Cambodia&rsquo;s Bakong system is one of the world&rsquo;s first retail CBDCs,
                           facilitating over 6.8 million transactions worth more than $2.9 billion since its launch.
                         </p>
                         <div className="h-[150px] bg-muted rounded-md"></div>

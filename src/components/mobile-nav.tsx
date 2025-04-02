@@ -53,30 +53,31 @@ export function MobileNav() {
           <div className="px-2 py-6 flex flex-col gap-4">
             <h2 className="text-lg font-semibold px-4">BlockChain UI</h2>
             <nav className="flex flex-col gap-2">
-              {routes.map((route, i) => {
-                const isActive = pathname === route.path
+            {routes.map((route) => {
+  const isActive = pathname === route.path;
 
-                return (
-                  <Link
-                    key={route.path}
-                    href={route.path}
-                    onClick={() => setOpen(false)}
-                    className={`flex items-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-colors relative ${
-                      isActive ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground"
-                    }`}
-                  >
-                    {isActive && (
-                      <motion.div
-                        layoutId="sidebar-indicator"
-                        className="absolute inset-0 bg-primary rounded-lg z-[-1]"
-                        transition={{ duration: 0.2 }}
-                      />
-                    )}
-                    <route.icon className="h-5 w-5" />
-                    {route.name}
-                  </Link>
-                )
-              })}
+  return (
+    <Link
+      key={route.path}
+      href={route.path}
+      onClick={() => setOpen(false)}
+      className={`flex items-center gap-2 rounded-lg px-4 py-3 text-sm font-medium transition-colors relative ${
+        isActive ? "text-primary-foreground" : "text-muted-foreground hover:text-foreground"
+      }`}
+    >
+      {isActive && (
+        <motion.div
+          layoutId="sidebar-indicator"
+          className="absolute inset-0 bg-primary rounded-lg z-[-1]"
+          transition={{ duration: 0.2 }}
+        />
+      )}
+      <route.icon className="h-5 w-5" />
+      {route.name}
+    </Link>
+  );
+})}
+
             </nav>
           </div>
         </SheetContent>
